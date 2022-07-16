@@ -66,9 +66,9 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
  ?>
  	<div class="container">
  		<div class="row">
- 			<div class="col-md-8">
+ 			<div class="col-md-12">
  				<div>
-	<form method="post" action="" id="signup">
+	<form method="post" action="" class="form-control form">
 	<h4 id="conct">Sign Up</h4>
 
 	<?php  
@@ -83,37 +83,38 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 
 		<label>First Name *</label><br>
 			<input type="text" name="firstname" id="fname"  
-			value="<?php if(isset($_POST['firstname'])){ echo $_POST['firstname']; } ?>"><br>
+			value="<?php if(isset($_POST['firstname'])){ echo $_POST['firstname']; } ?>" class="form-control"><br>
 		<label>Last Name *</label><br>
 			<input type="text" name="lastname" id="lname"  
 			value="<?php if(isset($_POST['lastname'])){
 				echo $_POST['lastname'];
-			} ?>"><br>
+			} ?>" class="form-control"><br>
 		<label>Email *</label><br>
 			<input type="text" name="email" id="mail"  
 			value="<?php if(isset($_POST['email'])){
 				echo $_POST['email'];
-			} ?>"><br>
+			} ?>" class="form-control"><br>
 		<label>Password *</label><br>
 			<input type="password" name="password" id="pass" 
-			 ><br>
+			  class="form-control"><br>
 		<label>Phone Number *</label><br>
 			<input type="number" name="phone" id="num" 
 			value="<?php if(isset($_POST['phone'])){
 				echo $_POST['phone'];
-			} ?>"><br>
+			} ?>" class="form-control"><br>
 		<label for="state">State</label><br>
-			<select for="state" id="state">
+			<select for="state" id="state" class="form-control">
 				<option value="">please select</option>
 			</select>
-		<label for="lga">LGA</label><br>
-			<select name="lga" id="lga" disabled>
+		<label for="lga">LGA</label>
+			<select name="lga" id="lga" disabled class="form-control">
 				<option value="">select lga</option>	
 			</select>
-		<input type="radio" name="gender" value="male"><span>Male</span>
+		<label>Gender</label><br><br>
+		<input type="radio" name="gender" value="male"><span>Male</span><br>
 		<input type="radio" name="gender" value="female"><span>Female</span><br>
-		<button class="btn-outline-warning mb-5 mt-5" id="btnsignup" onclick="btnsign()">Sign up</button>
-		<span>if you have an account please <a href="login.php">login</a><span>
+		<button class="btn btn-outline-warning mb-5 mt-5" id="btnsignup" onclick="btnsign()">Sign up</button><br>
+		<small>if you have an account please <a href="login.php">login</a><small>
 	</form>	
 	</div>
  			</div>

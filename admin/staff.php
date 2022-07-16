@@ -2,9 +2,10 @@
 	<div class="row">
 		<div class="col-md-8">
 			<h2>Staffs</h2>
-			<table class="table table-bordered table-striped table-hover">
+			<table class="table table-bordered table-striped table-hover"
+			style="width:300px; line-height: 40px;" align="center">
 				<thead>
-					<th>#</th>
+					
 					<th>staff id</th>
 					<th>staff name</th>
 					<th>email</th>
@@ -19,18 +20,20 @@
 
 					$staff = $obj->staff();
 
+
+
 					if (count($staff) > 0) {
 						foreach($staff as $key => $value){
-							$staffid = $value['staff_id'];
+							
 					?>
 					<tr>
-						<td>#</td>
+						<td><?php echo $value['staff_id']; ?></td>
 						<td><?php echo $value['staff_name']; ?></td>
 						<td><?php echo $value['staff_email']; ?></td>
 						<td><?php echo $value['staff_address']; ?></td>
-						<td><?php echo $value['staff_qualification'];
-						 ?></td>
+						<td><?php echo $value['staff_qualification'];?></td>
 						 <td><?php echo $value['date_joined']; ?></td>
+
 						 <td><a href="">Edit</a>| <a href="">Delete</a></td>
 					</tr>
 					<?php

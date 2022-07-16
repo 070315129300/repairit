@@ -1,7 +1,4 @@
-<?php 
-  session_start();
-  
-?>
+
 <?php 
   include_once('include/dashboardnav.php');
 ?>
@@ -15,17 +12,57 @@
                 <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
                 <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
               </div>
-              <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                <span data-feather="calendar" class="align-text-bottom"></span>
-                This week
-              </button>
+               <span style="color:gold">Hello</span> 
+           <?php  
+                if (isset($_SESSION['firstname'])) {
+                   echo $_SESSION['firstname']." ".$_SESSION['lastname'];
+                }
+            ?>
             </div>
           </div>
 
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <div id="ajaxload"></div>
+            <div id="ajaxload">
+              
+  <style type="text/css">
+  .dash{
+    box-shadow: 10px, 5px, 7px, gray;
+    border: 1px soild black;
+    
+  }
+</style>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4"><div class="dash">
+      <p>book a repair</p>
+    </div>
+       
+              
+    </div>
+      <div class="col-md-4 ">
+        <div class="dash"><p>book a repair</p>
+        </div>             
+    </div>
+    <div class="col-md-4"><div class="dash">
+      total number of customer
+    </div>
+    </div>
+
+    <div class="col-md-3"><div class="dash">total number of message</div>
+    </div>
+
+    <div class="col-md-3 dash"><div class="dash">
+    total number of repairs</div></div>
+
+
+    <div class="col-md-3 dash"><div class="dash">
+    total number of repairs</div></div>
+  </div>
+</div>
+
+            </div>
           </div>
         </div>
       </div>    

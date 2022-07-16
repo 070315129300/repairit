@@ -1,7 +1,5 @@
 <?php 
-// start seesion
 session_start();
-
 include_once("include/menus_navbar.php");
   //check if the user click on login button
 
@@ -18,13 +16,13 @@ $custobj =new Customer();
   }else{
 
    
-    header("location:dashboard.php");
+    header("Location:dashboard.php");
     exit();
   }
 }
 ?>
   <div class="container">
-    <!-- Page Heading/Breadcrumbs -->
+    
     <h1>
       Login
     </h1>

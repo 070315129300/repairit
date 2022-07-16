@@ -1,4 +1,8 @@
 <style type="text/css">
+	*{
+		
+font-family: 'Poppins', sans-serif;
+	}
 	.nav-link{
 		color: gold;
 	}
@@ -58,8 +62,8 @@
 	background-size:cover;	
 }
 .pic{
-	width:50%;
-	height:200px;
+	/*width:50%;
+	height:200px;*/
 }
 .center{
 	text-align:center;
@@ -127,15 +131,4 @@ margin-left: 10px;
 .nav_p{
 	font-size: 300%;
 }
-#signup, input{
-
-	 
-}
-#signup{
-	border: 1px solid black;
-	width: 40%;
-}
-
-
-
 </style>

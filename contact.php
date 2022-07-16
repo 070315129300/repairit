@@ -47,7 +47,7 @@
 					<input type="email" name="email" 
 					class="form-control form"><br>
 					<label>Message</label><br>
-					<textarea  class="form-control form" name="Message"></textarea>
+					<textarea  class="form-control form" name="message"></textarea>
 					<button class="btn btn-warning mt-3 mb-5">Submit</button>
 					
 

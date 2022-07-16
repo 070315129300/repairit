@@ -12,16 +12,54 @@
 			}
 		}
 		//begin insert book order
-
+			function order($fullname,$email, $phone, $address, $city, $dmodel, $fault){
+				//prepare statement
+				$stmt = $this->dbconn->prepare("INSERT INTO(fullname, email, phone, address, city, dmodel, fault)VALUES(?,?,?,?,?,?,?)");
+				$stmt->bind_param('sssssss', $fullname, $email, $phone, $address, $city, $dmodel, $fault);
+				$stmt->execute();
+				if($stmt->affected_rows ==1){
+                    return true;
+                }else{
+                    echo "oops! something went wrong try again later".$stmt->error;
+                }
+			}
 		//end insert end book order
 
-		//fetch customer
+		//fetch staff
+			 public function staff(){
+            // prepare statement
+            $stmt = $this->dbconn->prepare("SELECT * FROM staff");
 
-		//end fetch customer
+            // bind the parameter
+           // $stmt->bind_param("i", $staff_id);
 
-		//fetch order details
+            // execute
+            $stmt->execute();
 
-		//end order details
+            // get result
+            $result = $stmt->get_result();
+            
+            return $result->fetch_assoc();
+        }
+		//end fetch staff
+
+		//fetch customer details
+        	 public function customer(){
+            // prepare statement
+            $stmt = $this->dbconn->prepare("SELECT * FROM customer");
+
+            // bind the parameter
+           // $stmt->bind_param("i", $staff_id);
+
+            // execute
+            $stmt->execute();
+
+            // get result
+            $result = $stmt->get_result();
+            
+            return $result->fetch_assoc();
+        }
+		//end customer details
 
 		//fetch logistic company
 

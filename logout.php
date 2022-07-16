@@ -1,5 +1,5 @@
 <?php 
-    include_once("shared/Customer.php");
+    include_once("shared/customer.php");
 
     // create object of user
     $obj = new Customer();

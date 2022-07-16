@@ -78,6 +78,33 @@
   </head>
 
   <body>
+    <?php 
+        // start session
+        session_start();
+
+        if (!isset($_SESSION['letmein']) && $_SESSION['letmein']!='cayleb') {
+          // redirect to login
+          //$msg = "<script>alert('You need to login to access this page!')</script>";
+          $msg = "You need to login to access this page!";
+          
+          header("Location: login.php?m=$msg");
+          exit();
+        }
+
+        // echo "<pre>";
+        // print_r($_SESSION);
+        // echo "</pre>";
+
+        // sanitize function
+        function sanitizeInput($data){
+          $data = trim($data);
+          $data = htmlspecialchars($data);
+          $data = addslashes($data);
+
+          return $data;
+        }
+    ?>
+    
 
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
       <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">REPAIR_IT</a>
@@ -86,10 +113,10 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search"
-        aria-label="Search">
+        aria-label="Search">       
       <div class="navbar-nav">
         <div class="nav-item text-nowrap">
-          <a class="nav-link px-3" href="../repairIt/login.php">Sign out</a>
+          <a class="nav-link px-3" href="../repairIt/logout.php">Sign out</a>
         </div>
       </div>
     </header>
@@ -103,6 +130,7 @@
                 <a class="nav-link active" id="dash" >
                   <span data-feather="home" class="align-text-bottom"></span>
                   Dashboard
+
                 </a>
               </li>
               <li class="nav-item" id="order">

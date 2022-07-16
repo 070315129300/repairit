@@ -51,8 +51,8 @@
 
             if(password_verify($password, $row['password'])){
 
-                session_start();
-                header("location:dashboard.php");
+               // session_start();
+               // header("location:dashboard.php");
                
             }else{
                  return false;
@@ -81,32 +81,41 @@
 
             if(password_verify($password, $row['password'])){
 
-                session_start();
-                header("location:dashboard.php");
-               
-            }else{
-                 return false;
-    exit(); 
-            }
-            }
+               // session_start();
+                    $_SESSION['lastname'] = $row['lastname'];
+                    $_SESSION['firstname'] = $row['firstname'];
+                    $_SESSION['letmein'] = "cayleb";
+                    $_SESSION['myemail'] = $row['email'];
 
-
+                return true;
+               }else {
+                   // echo " doesn't match";
+                    return false;
                 }
+            }else {
+                //echo "email address doesn't exist";
+                return false;
+          
+            }
+            }
+
         // end login
         //begin logout
 
+     
         function logout(){
             session_start();
             session_destroy();
 
-            header('Location:login.php');
+            // redirect to login
+            header("Location: login.php");
             exit();
         }
          //begin insert contact us 
              function contactus($fullname, $email, $message){
                 //prepare statement
                
-                $sttmt = $this->dbconn->prepare("INSERT INTO contact_us(fullname, email, message )VALUES(?,?,?)");
+                $sttmt = $this->dbconn->prepare("INSERT INTO contactus(fullname, email, message )VALUES(?,?,?)");
 
                 $sttmt->bind_param('sss', $fullname, $email, $message );
 

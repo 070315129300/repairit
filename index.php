@@ -130,7 +130,7 @@
 			</div>
 
 			<div class="row ">
-				<div class="col-md-12" id="fix"> What Problems Can <br>Repair Fix?</div>
+				<div class="col-md-12" id="fix"> What Problems Can <br>Repair Fix<span style="color:gold">?</span></div>
 			</div>
 			<div class="row fix_r">
 				<div class="col-md-3"> </div>

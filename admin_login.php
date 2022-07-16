@@ -1,7 +1,4 @@
 <?php 
-// start seesion
-session_start();
-
 include_once("include/menus_navbar.php");
   //check if the user click on login button
 
