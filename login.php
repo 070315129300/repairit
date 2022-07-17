@@ -27,11 +27,13 @@ $custobj =new Customer();
       Login
     </h1>
      <?php  
-          if(isset($output)){
-            var_dump ($output);
-          }
-          ?>
+           
+           if(isset($error)){
+        echo ($error);
+    }
 
+          ?>
+ 
           <?php 
             if(isset($_GET['m'])){
               echo "<div class='alert alert-danger'>".$_GET['m']."</div>";
