@@ -18,6 +18,7 @@ $custobj =new Customer();
    
     header("Location:dashboard.php");
     exit();
+    
   }
 }
 ?>

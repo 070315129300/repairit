@@ -31,7 +31,7 @@
 					?>
 					<tr>
 						<td><?php echo $value['customer_id'];?></td>
-						<td><?php echo $value['role_id'];?></td>
+						
 						<td><?php echo $value['firstname'];?></td>
 						<td><?php echo $value['lastname'];?></td>
 						<td><?php echo $value['email']; ?></td>

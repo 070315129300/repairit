@@ -11,11 +11,11 @@
             if($this->dbconn->connect_error){
                 die('connection Failed:'. $this->dbconn->connect_error);
             }else{
-                //echo "connection successful";
+                // "connection successful";
             }
         }
         //begin insert
-            function insertcustomer($firstname, $lastname, $email, $password, $phone, $gender){
+            function customer($firstname, $lastname, $email, $password, $phone, $gender){
                 //prepare statement
                 $pwd = password_hash($password, PASSWORD_DEFAULT);
 
@@ -27,6 +27,7 @@
                 $stmt->execute();
                 if($stmt->affected_rows ==1){
                     return true;
+                    //echo "insert successfull";
                 }else{
                     echo "oops! something went wrong try again later".$stmt->error;
                 }

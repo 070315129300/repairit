@@ -1,11 +1,9 @@
 <?php 
 	include "include/menus_navbar.php";
-?>
 
-<?php 
-if ($_SERVER['REQUEST_METHOD']=='POST') {
-	
-
+	include_once "shared/customer.php";
+	$custobj = new Customer();	
+				
 	//check if sign up button is clicked
 	if(isset($_POST['btnsignup'])){
 		// validate inputs
@@ -30,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 			$errors['password'] = "password must be more than 5 xters";
 		}
 
-		if (empty($errors)) {
+		
 			//sanitize inputs
 
 			include_once "shared/comon.php";
@@ -46,24 +44,26 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 
 			//create object and pass parameter
 
-			include_once "shared/customer.php";
 			
-			$custobj = new Customer();
-
 			//store what it return in output varriable
 
-			$output = $custobj->insertcustomer($firstname, $lastname, $email, $phone, $password, $gender);
+			$output = $custobj->customer($firstname, $lastname, $email, $phone, $password, $gender);
 
 			if ($output ==true) {
 				header('Location:login.php');
 			}else{
-				$errors[] = "Oops! something happened. Try again later.";
+				echo "Oops! something happened. Try again later.".$output;
 			}
-
 		}
-		}
-	}
  ?>
+ <?php 
+
+	include_once('shared/region.php');
+
+		$obj = new Region();
+
+		$states = $obj->getStates();
+	 ?>
  	<div class="container">
  		<div class="row">
  			<div class="col-md-12">
@@ -80,7 +80,6 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 		echo "</ul>";
 		}
 	?>
-
 		<label>First Name *</label><br>
 			<input type="text" name="firstname" id="fname"  
 			value="<?php if(isset($_POST['firstname'])){ echo $_POST['firstname']; } ?>" class="form-control"><br>
@@ -102,10 +101,22 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 			value="<?php if(isset($_POST['phone'])){
 				echo $_POST['phone'];
 			} ?>" class="form-control"><br>
-		<label for="state">State</label><br>
-			<select for="state" id="state" class="form-control">
-				<option value="">please select</option>
-			</select>
+		
+		<label for="state" class="form-label">state</label>
+
+						<select name="state" id="state" class="form-select" requirede>
+							<option value="">choose state</option>
+					<?php 
+						if(count($states) > 0){
+							foreach($states as $key => $value){
+								$stateid = $value['state_id'];
+							$statename = $value['state_name'];
+							echo "<option value='$stateid'>$statename </option>";
+							}
+						}
+
+					?>
+						</select>
 		<label for="lga">LGA</label>
 			<select name="lga" id="lga" disabled class="form-control">
 				<option value="">select lga</option>	
@@ -113,7 +124,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 		<label>Gender</label><br><br>
 		<input type="radio" name="gender" value="male"><span>Male</span><br>
 		<input type="radio" name="gender" value="female"><span>Female</span><br>
-		<button class="btn btn-outline-warning mb-5 mt-5" id="btnsignup" onclick="btnsign()">Sign up</button><br>
+		<button class="btn btn-outline-warning mb-5 mt-5" id="btnsignup">Sign up</button><br>
 		<small>if you have an account please <a href="login.php">login</a><small>
 	</form>	
 	</div>
@@ -125,3 +136,21 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 <?php 
 	include "include/footer.php"
 ?>
+<script type="text/javascript">
+		
+
+		$(document).ready(function(){
+			// get LGA based on state selected
+
+			$("#state").change(function(){
+
+				var stateid = $(this).val();
+			
+				//fetch
+
+				$('#lga').load('pload.php',{mystateid: stateid}, function(){
+					$('#lga').prop('disabled', false);
+				});
+			})
+		})
+	</script>

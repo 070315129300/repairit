@@ -17,7 +17,7 @@
 					include_once('../shared/dashuser.php');
 					$obj = new Dashuser();
 
-					$staff = $obj->staff();
+					$staff = $obj->logistics();
 
 					if (count($staff) > 0) {
 						foreach($staff as $key => $value){

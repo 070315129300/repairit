@@ -3,7 +3,7 @@
 
 		$stateid = $_POST['mystateid'];
 
-		include_once("shared/customer.php");
+		include_once("shared/region.php");
 
 		$obj = new customer();
 
