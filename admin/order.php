@@ -1,26 +1,54 @@
 	 <div class="container-fluid" >
 		<div  class="row">
 			<div class="col-md-12">
-			<div><h1>book a repair</h1></div>	
+			<div><h1>Order made</h1></div>	
 			</div>
-			<div class="offset-md-12">
-				<form method="post" action="" class="form-control form">
-					<label>Name </label><br>
-					<input type="text" name="fullname" class="form-control form" ><br>
-					<label>Email </label><br>
-					<input type="text" name="email" class="form-control form"><br>
-					<label>Phone Number </label><br>
-					<input type="number" name="phone" class="form-control form"><br>
-					<label>Street Address </label><br>
-					<input type="text" name="address" class="form-control form"><br>
-					<label>City </label><br>
-					<input type="text" name="city" class="form-control form"><br>
-					<textarea class="form-control form" name="dmodel">Device and model</textarea><br>
-					<textarea class="form-control form" name=fault>Fault and complain</textarea><br>
-					<button class="btn-outline-warning mb-5">Book a Repair</button>
-				</form>
+			<div class="col-md-12">
+				<table class="table table-bordered table-striped table-hover">
+				<thead>
+					<th>#</th>
+					<th>Fullname</th>
+					<th>Email</th>
+					<th>Phone number</th>
+					<th>Address</th>
+					<th>City</th>
+					<th>Device Model</th>
+					<th>Fault Complain</th>
+					
+					
+				</thead>
+				<tbody>
+					<?php 
+					include_once('../shared/dashuser.php');
+					$obj = new Dashuser();
+
+					$message= $obj->ordermade();
+
+					if (count($message) > 0) {
+						foreach($message as $key => $value){
+							
+					?>
+					<tr>
+						<td><?php echo $value['order_id']; ?></td>
+						<td><?php echo $value['fullname']; ?></td>
+						<td><?php echo $value['email']; ?></td>
+						<td><?php echo $value['phone']; ?></td>
+						<td><?php echo $value['address']; ?></td>
+						<td><?php echo $value['city']; ?></td>
+						<td><?php echo $value['devicemodel']; ?></td>
+						<td><?php echo $value['fault']; ?></td>
+					</tr>
+					<?php
+						}
+					}
+					?>
+					 
+				</tbody>
+				
+			</table>
+				
 			</div>
 		</div>
-	</div> -->
+	</div> 
 
 </div>

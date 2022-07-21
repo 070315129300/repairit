@@ -121,11 +121,20 @@
          <script type="text/javascript" src="jqy/jquery.js"></script>
          <script type="text/javascript">
            $(document).ready(function(){
+            $('#book').click(function(){
+              $('#ajaxload').load('admin/bookarepair.php');
+            })
             $('#order').click(function(){
-              $('#ajaxload').load('admin/order.php');
+              $('#ajaxload').load('admin/order.php')
+            })
+            $('#track').click(function(){
+              $('#ajaxload').load('admin/trackarepair.php')
             })
             $('#staff').click(function(){
               $('#ajaxload').load('admin/staff.php')
+            })
+            $('#contactus').click(function(){
+              $('#ajaxload').load('admin/contacts.php')
             })
             $('#bill').click(function(){
               $('#ajaxload').load('admin/bill.php')
@@ -136,7 +145,7 @@
             $('#orderd').click(function(){
               $('#ajaxload').load('admin/order_details.php')
             })
-            $('#pick').click(function(){
+            $('#pickup').click(function(){
               $('#ajaxload').load('admin/logistics_pickup.php')
             })
             $('#delivery').click(function(){

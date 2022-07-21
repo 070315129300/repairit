@@ -140,10 +140,32 @@
                 </a>
 
               </li>
+              <li class="nav-item" id="book">
+                <a class="nav-link">
+                  <span data-feather="file" class="align-text-bottom"></span>
+                  Book a repair
+                </a>
+
+              </li>
+              <li class="nav-item" id="track">
+                <a class="nav-link">
+                  <span data-feather="file" class="align-text-bottom"></span>
+                  Track a repair
+                </a>
+
+              </li>
               <li class="nav-item">
                 <a class="nav-link" id="device">
                   <span data-feather="shopping-cart" class="align-text-bottom"></span>
                   Device
+                </a>
+              </li>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contactus">
+                  <span data-feather="shopping-cart" class="align-text-bottom"></span>
+                  Message
                 </a>
               </li>
               <li class="nav-item">
@@ -155,43 +177,43 @@
               <li class="nav-item">
                 <a class="nav-link" id="orderd">
                   <span data-feather="bar-chart-2" class="align-text-bottom"></span>
-                  order details
+                  Order details
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="bill">
                   <span data-feather="layers" class="align-text-bottom"></span>
-                  first bill
+                  First bill
                 </a>
               </li>
                <li class="nav-item">
                 <a class="nav-link" id="payment">
                   <span data-feather="layers" class="align-text-bottom"></span>
-                  payment
+                  Payment
                 </a>
               </li>
                <li class="nav-item">
                 <a class="nav-link" id="logistics">
                   <span data-feather="layers" class="align-text-bottom"></span>
-                  logistics company
+                  Logistics company
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="pickup">
                   <span data-feather="layers" class="align-text-bottom"></span>
-                  logistics pickup
+                  Logistics pickup
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="delivery">
                   <span data-feather="layers" class="align-text-bottom"></span>
-                  logistics delivery
+                  Logistics delivery
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="staff">
                   <span data-feather="layers" class="align-text-bottom"></span>
-                  staff
+                  Staff
                 </a>
               </li>
             </ul>

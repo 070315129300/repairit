@@ -21,9 +21,9 @@
 
 					$cust = $obj->customer();
 
-					 echo "<pre>";
-                 print_r($cust);
-                echo "</pre>";
+					 // echo "<pre>";
+      //            print_r($cust);
+      //           echo "</pre>";
 
 					if (count($cust) > 0) {
 						foreach($cust as $key => $value){

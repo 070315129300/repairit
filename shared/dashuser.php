@@ -12,10 +12,10 @@
 			}
 		}
 		//begin insert book order
-			function order($fullname,$email, $phone, $address, $city, $dmodel, $fault){
+			function orde($fullname,$email, $phone, $address, $city, $devicemodel, $fault){
 				//prepare statement
-				$stmt = $this->dbconn->prepare("INSERT INTO(fullname, email, phone, address, city, dmodel, fault)VALUES(?,?,?,?,?,?,?)");
-				$stmt->bind_param('sssssss', $fullname, $email, $phone, $address, $city, $dmodel, $fault);
+				$stmt = $this->dbconn->prepare("INSERT INTO orders(fullname, email, phone, address, city, devicemodel, fault)VALUES(?,?,?,?,?,?,?)");
+				$stmt->bind_param('sssssss', $fullname, $email, $phone, $address, $city, $devicemodel, $fault);
 				$stmt->execute();
 				if($stmt->affected_rows ==1){
                     return true;
@@ -71,7 +71,7 @@
        
 		//end customer details
         //fetch meassage
-         public function contactus(){
+         public function contact(){
             // prepare statement
             $stmt = $this->dbconn->prepare("SELECT * FROM contactus");
 
@@ -111,5 +111,43 @@
         }
 		//end logistic company
 
+		//book a repair
+        	 public function ordermade(){
+            // prepare statement
+            $stmt = $this->dbconn->prepare("SELECT * FROM orders");
+
+            // execute
+            $stmt->execute();
+
+            // get result
+            $result = $stmt->get_result();
+            $re=array();
+            if ($result->num_rows > 0) {
+                # fetch row
+                while ($row = $result->fetch_assoc()) {
+                    $re[] = $row;
+            }}
+            
+            return $re;
+        }
+		//end a repair
+         public function orderdetails(){
+            // prepare statement
+            $stmt = $this->dbconn->prepare("SELECT * FROM logistics_company");
+
+            // execute
+            $stmt->execute();
+
+            // get result
+            $result = $stmt->get_result();
+            $re=array();
+            if ($result->num_rows > 0) {
+                # fetch row
+                while ($row = $result->fetch_assoc()) {
+                    $re[] = $row;
+            }}
+            
+            return $re;
+        }
 	}
  ?>

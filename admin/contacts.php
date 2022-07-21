@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-8">
-			<h2>Staffs</h2>
+			<h2>All messages</h2>
 			<table class="table table-bordered table-striped table-hover">
 				<thead>
 					<th>#</th>
@@ -16,14 +16,14 @@
 					include_once('../shared/dashuser.php');
 					$obj = new Dashuser();
 
-					$staff = $obj->contactus();
+					$message= $obj->contact();
 
-					if (count($staff) > 0) {
-						foreach($staff as $key => $value){
-							$contactid = $value['staff_id'];
+					if (count($message) > 0) {
+						foreach($message as $key => $value){
+							
 					?>
 					<tr>
-						<td>#</td>
+						<td><?php echo $value['contact_id']; ?></td>
 						<td><?php echo $value['fullname']; ?></td>
 						<td><?php echo $value['email']; ?></td>
 						<td><?php echo $value['message']; ?></td>

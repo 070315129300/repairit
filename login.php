@@ -2,15 +2,11 @@
 session_start();
 include_once("include/menus_navbar.php");
   //check if the user click on login button
-
 if ($_SERVER['REQUEST_METHOD']=="POST"){
   include_once("shared/customer.php");
-
   //create object of user's class
 $custobj =new Customer();
-
   $output = $custobj->Clogin($_POST['eemail'], $_POST['epassword']);
-
   if($output == false){
     $error= "<div class='alert alert-danger'>invaild username or password</div>";
   }else{
@@ -25,7 +21,7 @@ $custobj =new Customer();
   <div class="container">
     
     <h1>
-      Login
+      Customer Login
     </h1>
      <?php  
            
@@ -50,6 +46,7 @@ $custobj =new Customer();
     <div class="row">
 
       <div class="col-lg-8">
+
        
          <form action="" method="post">
   <div>

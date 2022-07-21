@@ -23,7 +23,7 @@ $custobj =new Customer();
   <div class="container">
     <!-- Page Heading/Breadcrumbs -->
     <h1>
-      Login
+      Admin Login
     </h1>
      <?php  
           if(isset($output)){

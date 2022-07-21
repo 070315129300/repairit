@@ -116,14 +116,14 @@
              function contactus($fullname, $email, $message){
                 //prepare statement
                
-                $sttmt = $this->dbconn->prepare("INSERT INTO contactus(fullname, email, message )VALUES(?,?,?)");
+                $stmt = $this->dbconn->prepare("INSERT INTO contactus(fullname, email, message )VALUES(?,?,?)");
 
-                $sttmt->bind_param('sss', $fullname, $email, $message );
+                $stmt->bind_param('sss', $fullname, $email, $message );
 
                 //execute
 
-                $sttmt->execute();
-                if($sttmt->affected_rows ==1){
+                $stmt->execute();
+                if($stmt->affected_rows ==1){
                     return true;
                 }else{
                     return false;
