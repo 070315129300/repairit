@@ -13,20 +13,15 @@
 					<th>Address</th>
 					<th>City</th>
 					<th>Device Model</th>
-					<th>Fault Complain</th>
-					
-					
+					<th>Fault Complain</th>					
 				</thead>
 				<tbody>
 					<?php 
 					include_once('../shared/dashuser.php');
 					$obj = new Dashuser();
-
 					$message= $obj->ordermade();
-
 					if (count($message) > 0) {
-						foreach($message as $key => $value){
-							
+						foreach($message as $key => $value){							
 					?>
 					<tr>
 						<td><?php echo $value['order_id']; ?></td>
@@ -41,14 +36,10 @@
 					<?php
 						}
 					}
-					?>
-					 
-				</tbody>
-				
-			</table>
-				
+					?>					 
+				</tbody>				
+			</table>				
 			</div>
 		</div>
 	</div> 
-
 </div>

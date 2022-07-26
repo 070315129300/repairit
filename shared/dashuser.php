@@ -24,7 +24,7 @@
                 }
 			}
 		//end insert end book order
-
+			
 		//fetch staff
 			 public function staff(){
             // prepare statement
@@ -47,7 +47,7 @@
 		//end fetch staff
         
 		//fetch customer details
-        	 public function customer(){
+        	 public function customerss(){
             // prepare statement
             $stmt = $this->dbconn->prepare("SELECT * FROM customer");
 

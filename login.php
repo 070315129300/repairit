@@ -18,11 +18,9 @@ $custobj =new Customer();
   }
 }
 ?>
-  <div class="container">
+  <div class="container" style="height:500px">
     
-    <h1>
-      Customer Login
-    </h1>
+    
      <?php  
            
            if(isset($error)){
@@ -48,18 +46,21 @@ $custobj =new Customer();
       <div class="col-lg-8">
 
        
-         <form action="" method="post">
+         <form action="" method="post" class="fom">
+          <h1>
+     Login
+    </h1>
   <div>
     <label for="eemail">Email</label>
-    <input type="email" name='eemail' class="form-control" id="eemail" required>
+    <input type="email" name='eemail' class="form-control form" id="eemail" required>
      
   </div>
   <div>
     <label for="ePassword">Password</label>
-    <input type="password" name='epassword' class="form-control" id="ePassword" required >
+    <input type="password" name='epassword' class="form-control form" id="ePassword" required >
   </div>
   
-  <button type="submit" class="btn btn-dark" onclick="press()">Login</button>
+  <button type="submit" class="btn btn-dark mt-5" onclick="press()">Login</button>
 </form>
       </div>  
     </div> 

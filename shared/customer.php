@@ -14,8 +14,9 @@
                 // "connection successful";
             }
         }
+            
         //begin insert
-            function customer($firstname, $lastname, $email, $password, $phone, $gender){
+            function custome($firstname, $lastname, $email, $password, $phone, $gender){
                 //prepare statement
                 $pwd = password_hash($password, PASSWORD_DEFAULT);
 
@@ -87,6 +88,7 @@
                     $_SESSION['firstname'] = $row['firstname'];
                     $_SESSION['letmein'] = "cayleb";
                     $_SESSION['myemail'] = $row['email'];
+                    $_SESSION['id'] = $row['customer_id'];
 
                 return true;
                }else {
@@ -130,6 +132,14 @@
                 }
             }
             //end contact us 
+            function adminlogout(){
+            session_start();
+            session_destroy();
+
+            // redirect to login
+            header("Location: admin_login.php");
+            exit();
+        }
     }
             
    

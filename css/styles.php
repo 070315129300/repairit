@@ -11,11 +11,18 @@ font-family: 'Poppins', sans-serif;
 }
 .kfoot ul{
 	list-style-color:gold;
-	font-size:12px;
+	font-size:16px;
+	list-style: none;
 }
 .kfoot ul li{
 	color:white;
-	font-size:10px;
+	font-size:14px;
+	list-style: none;
+}
+.kfoot ul li:before{
+	content: "\2022 \00A0";
+	color: gold;
+	width: 5px;
 }
 .kfoot h5{
 	color:gold;
@@ -45,9 +52,17 @@ font-family: 'Poppins', sans-serif;
 	 outline:none;
 	  border-bottom: 1px solid gray;
 }
-#ser{
-	background-image:url('../images/service2.jpg');
-	height:300px;
+.ser{
+	background-image:url('images/con2.png');
+	height:500px;
+	width:100%;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;	
+}
+.cont{
+	background-image:url('images/con1.png');
+	height:500px;
 	width:100%;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -69,16 +84,28 @@ font-family: 'Poppins', sans-serif;
 	text-align:center;
 }
 .vec{
-    padding: 80px;	
+    padding: 10px;
+    text-align: center;	
     
+}
+.vec:hover{
+	transform: scale(1.8);
+	-ms-transform: scale(1.8);
+	-webkit-transform: scale(1.8);
+}
+.hover:hover{
+	color: white;
+	transform: scale(1.2);
+
 }
 .vector{
     text-align: center;
     
 }
 #index_break{
-    font-size: 70px;
-    padding: 30px;
+    font-size: 60px;
+    margin-left: 100px;
+    margin-top: 100px;
    color:antiquewhite;
 }
 #choose{
@@ -94,15 +121,15 @@ padding: 16px;
 margin-left: 10px;
 }
 #fast_repair{
-    margin-left: 40px;
+    margin-left: 140px;
     font-size: 20px;
     color:aliceblue;
-    padding: 30px;
+    padding: 0px;
 }
 #fix{ 
 	/*margin: 20px;*/
 	text-align: center;
-	font-size: 70px;
+	font-size: 60px;
 }
 .fix_r{
 	text-align: center;
@@ -110,18 +137,24 @@ margin-left: 10px;
 }
 #class_repair{
 	color:white;
-	padding: 5%;
+	margin-left: 120px;
+	margin-top: 100px;
 	font-size: 60px;
 }
 
 .shadow{
 	box-shadow: 6px 12px 9px dimgray;;
 }
+.shadow:hover{
+	transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+}
 #content{
 	position: absolute;
 	top: 30%;
 	left: 30%;
-	color: green;
+	color: #23CE6B;
 	text-align: center;
 
 }
@@ -131,4 +164,20 @@ margin-left: 10px;
 .nav_p{
 	font-size: 300%;
 }
+#wecan{
+	font-size: 60px ;
+}
+#ol_li li{
+	font-weight: bold;
+	font-size: 25px;
+}
+#broken{ 
+color: antiquewhite;
+margin-left: 140px;
+margin-top: 50px;
+} 
+.fom{
+	padding: 10%;
+}
+
 </style>

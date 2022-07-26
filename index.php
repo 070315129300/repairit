@@ -16,7 +16,7 @@
 						<div id="content">
 							<h3 class="navslide">Get it working again</h3>
 							<p class="nav_p">you need a device fixed?</p>
-							<button><a href="login.php"></a> book a repair</button>
+							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:gray	; text-decoration-line: none;">book a repair</a></button>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -25,7 +25,7 @@
 					<div id="content">
 							<h3 class="navslide">Get it working again</h3>
 							<p class="nav_p">you need a device fixed?</p>
-							<button><a href="login.php"></a> book a repair</button>
+							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:gray	; text-decoration-line: none;">book a repair</a></button>
 					</div>
 				</div>
 				
@@ -35,51 +35,51 @@
 					<div id="content">
 							<h3 class="navslide">Get it working again</h3>
 							<p class="nav_p">you need a device fixed?</p>
-							<button><a href="login.php"></a> book a repair</button>
+							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:gray	; text-decoration-line: none;">book a repair</a> </button>
 					</div>
 				
 				</div>
 			</div>
 		</div>
-		<!--<p> we have got you covered</p>-->
+		
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-2">
-					<div class="vec"><img src="images/vector1.webp" width="200px" class="img-fluid ">
+				<div class="col-md-4 col-lg-2 col-sm-6">
+					<div class="vec"><img src="images/vector1.webp" width="50px" class="img-fluid ">
 
 					</div>
 					<p class="vector">Laptop</p>
 				</div>
 
-				<div class="col-md-2 ">
-					<div class="vec"><img src="images/vector2.jpg" width="100px" class="img-fluid ">
+				<div class="col-md-4 col-lg-2 col-sm-6">
+					<div class="vec"><img src="images/vector2.jpg" width="50px" class="img-fluid ">
 
 					</div>
 					<p class="vector">Smart watch</p>
 				</div>
 
-				<div class="col-md-2 ">
-					<div class="vec"><img src="images/vector3.webp" width="70px" class="img-fluid ">
+				<div class="col-md-4 col-lg-2 col-sm-6">
+					<div class="vec"><img src="images/vector3.webp" width="50px" class="img-fluid ">
 					</div>
 					<p class="vector">Tablet</p>
 
 				</div>
 
-				<div class="col-md-2 ">
-					<div class="vec"><img src="images/vector4.webp" width="80px" class="img-fluid ">
+				<div class="col-md-4 col-lg-2 col-sm-6">
+					<div class="vec"><img src="images/vector4.webp" width="50px" class="img-fluid ">
 					</div>
 					<p class="vector">Mp3 player</p>
 
 				</div>
-				<div class="col-md-2 ">
-					<div class="vec"><img src="images/vector5.jpg" width="75px" class="img-fluid ">
+				<div class="col-md-4 col-lg-2 col-sm-6">
+					<div class="vec"><img src="images/vector5.jpg" width="50px" class="img-fluid ">
 
 					</div>
 					<p class="vector">BT speaker</p>
 				</div>
 
-				<div class="col-md-2 ">
-					<div class="vec"><img src="images/vector6.webp" width="100px" class="img-fluid ">
+				<div class="col-md-4 col-lg-2 col-sm-6">
+					<div class="vec"><img src="images/vector6.webp" width="50px" class="img-fluid ">
 
 					</div>
 					<p class="vector">Mobile phone</p>
@@ -87,26 +87,26 @@
 			</div>
 
 			<div class="row mt-5" style="background-color: #010101;">
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-12">
 					<p id="index_break"> we can <span style="color:gold">REPAIT IT</span><br>
-						almost has fast<br> has you can <br>break it</p>
+						almost has fast has you <br>can break it</p>
 					<p id="fast_repair">
 						We do fast phone repair. In most cases,<br> technicians will be able to repair your<br> device
 						in just minutes, we’ll normally<br>
 						get your phone in and out in 45 minutes or less.</p>
-					<button class="btn btn-outline-warning mb-5" 
-					style="margin-left: 8%;">Book a repair</button>
+					<button class="btn btn-outline-warning mb-5 mt-5" 
+					style="margin-left: 16%;">Book a repair</button>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-12	" >
 					<img src="images/8.jpg" style="margin-top: 25%;">
 				</div>
 
 			</div>
 			<div class="row" style="background-color: #babab8;">
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-12">
 					<img src="images/contact2.jpg" alt="phone" width="70%" style="margin: 15% 15%;">
 				</div>
-				<div class="col-md-6 mt-5">
+				<div class="col-md-6 col-sm-12 mt-5">
 					<h3 id="choose">While Choose Us <span style="color: gold;">?</span> </h3>
 					<h6 class="index_choose">Same Day Repairs</h6>
 					<p class="index_class">When your phone breaks, you don’t want it fixed tomorrow—you<br> need it
@@ -195,7 +195,7 @@
 			<div class="col-md-6" style="height:500px;">
 				<h3 id="class_repair"> our repair<br> means bussiness</h3>
 
-				<p style="color: antiquewhite; font-size: 16px; padding-left: 7%">
+				<p id="broken">
 				Broken and slow-performing devices can grind productivity<br>
 				 down to a halt for big and small companies.<br>
 				REPAIR Team can get business booming again.
@@ -206,18 +206,65 @@
 				<img src="images/index6.webp" class="img-fluid">
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12" style="text-align:center; background-color: aquamarine; height:500px">
-				<p>Over 5000+ <br>
-					completed repairs & Still counting.</p>
+		<div class="row" style=" background-color: aquamarine; height:500px">
+			<div class="col-md-4" >
 
-
+				<div class="counters"><p>Over <span class="counter" data-target='2000'>0</span> completed repairs & Still counting.</p></div>
 			</div>
-		</div>
-		</div>
-		<!--footer-->
 
+					<div class="col-md-4">
+						<p>Over <span class="counter" data-target='5000'>0 </span> Still counting.</p>
+					</div>
+
+					<div class="col-md-4">
+						<p>Over <span class="counter" data-target='8000'>0 </span> happy customer.</p>
+					</div>
+	</div>
+</div>
+
+		<!--footer-->
 <?php 
 	include "include/footer.php"
 ?>
+	<script type="text/javascript">
+		const counters = document.querySelectorAll('.counter');
+
+		const speed = 200; //lower the slower
+
+		counters.forEach(counter =>{
+			const updateCount = () => {
+				const target = +counter.getAttribute('data-target');
+				const count = +counter.innnerText;
+
+				const inc = target / speed;
+
+				if (count < target ) {
+					counter.innnerText = count + inc;
+					setTimeout(updateCount, 1);
+				}else{
+					counter.innnerText = target;
+				}
+
+
+			};
+			updateCount();
+		});
+
+		let valueDisplays = document,querySelectorAll('.counter');
+		let interval = 5000;
+
+		valueDisplays.forEach((valueDisplay) => {
+			let startValue = 0;
+			let endValue = parseInt(valueDisplays.getAttribute("data-target"));
+			let duration = Math.floor(interval / endValue);
+			let counter = setInterval(function (){
+				startValue += 1;
+				valueDisplay.textContent = startValue;
+				if(startValue == endValue){
+					clearInterval(counter);
+				}
+			}, duration)
+
+		});
+	</script>
 

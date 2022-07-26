@@ -9,36 +9,43 @@
 	}*/
 </style>
 	<div class="container-fluid">
-		<div class="row">
+		<div class="row mb-5">
 			<div class="col-md-12">
-				<div  id='ser'><h1 id="conct">services</h1></div>
+				<div  class='ser'> </div>
+
 			</div>
 		</div>
-		<div class="row">
-			<div class="col" >
-				<p class="center">What problem can<br>Repair It fix? </p>
+		<div class="row mt-5 mb-5">
+			<div class="col-md-7" >
+
+				<img src="images/index4.jpg" width="80%">
 			</div>
-		</div>
-		<div class="row" style="justify-content: center;">
-			<div class="col-6">
+			<div class="col-md-5">
 				<div class="row">
-			<div class="col-4">
-				<img src="images/service1.jpg" alt="cracked screen" class="pic img-fluid">
-				<p>Cracked Screen</p>
+				<div class="col-md-12 mb-5"><h2 id="wecan">We Can <span style="color:gold">Repair</span> It!</h2></div>
+				<div class="col-md-12">
+					
+					<p id="ourprices">Our prices for iPhone repairs are competitive with anyone in the city.<br> We repair cracked screens for all models of iPhones and repair broken buttons,<br> speakers and cameras as well. Cracked screen on your new iPhone? We fix that.</p>
+					<ol id="ol_li" class="mt-5 mb-5">
+						<li>Headphones Plug</li>
+						<li>Charging Port</li>
+						<li>Home Button</li>
+						<li>Side Buttons</li>
+						<li>iSight Camera</li>
+						<li>Power Button</li>
+						<li>Screen</li>
+						<li>Battery</li>
+						<li>Won′t Turn On</li>
+					</ol>
+
+
+				</div>
 			</div>
-			<div class="col-4" style>
-			<img src="images/service1.jpg" alt="cracked screen" class="pic img-fluid"><p>Water Damage</p></div>
-			<div class="col-4">
-			<img src="images/service1.jpg" alt="cracked screen" class=" pic img-fluid"><p>Speaker Not Working</p></div>
-			<div class="col-4">
-			<img src="images/service1.jpg" alt="cracked screen" class="pic img-fluid"><p>Dead Battery</p></div>
-			<div class="col-4">
-			<img src="images/service1.jpg" alt="cracked screen" class="pic img-fluid"><p>Broken Buttons</p></div>
-			<div class="col-4">
-			<img src="images/service1.jpg" alt="cracked screen" class="pic img-fluid"><p>No Signal</p></div>
+			</div>
+			
 		</div>
-	</div>
-		</div>	
+	
+	
 	</div>
 
 <?php 

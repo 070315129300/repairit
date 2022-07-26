@@ -1,7 +1,7 @@
 <?php 	
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-		include_once "./shared/dashuser.php";
+		include_once "../shared/dashuser.php";
 	$obj = new Dashuser();
 
 	$output = $obj->orde($_POST['fullname'], $_POST['email'], $_POST['phone'], $_POST['address'], $_POST['city'], $_POST['message1'], $_POST['message2'],);

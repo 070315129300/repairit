@@ -3,7 +3,7 @@
 		<div class="col-md-8">
 			<h2>Staffs</h2>
 			<table class="table table-bordered table-striped table-hover"
-			style="width:300px; line-height: 40px;" align="center">
+			width="100%"; line-height="40px;" align="center">
 				<thead>
 					
 					<th>staff id</th>

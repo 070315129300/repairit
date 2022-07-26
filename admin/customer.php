@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-12">
 			<h2>Customer</h2>
 			<table class="table table-bordered table-striped table-hover">
 				<thead>
@@ -9,17 +9,15 @@
 					<th>first name</th>
 					<th>last name</th>
 					<th>email</th>
-					<th>phone</th>
-					<th>address</th>
+					<th>phone</th>		
 					<th>gender</th>
-					<th>date joined</th>
 				</thead>
 				<tbody>
 					<?php 
 					include_once('../shared/dashuser.php');
 					$obj = new Dashuser();
 
-					$cust = $obj->customer();
+					$cust = $obj->customerss();
 
 					 // echo "<pre>";
       //            print_r($cust);
@@ -36,9 +34,9 @@
 						<td><?php echo $value['lastname'];?></td>
 						<td><?php echo $value['email']; ?></td>
 						<td><?php echo $value['phone'];?></td>
-						<td><?php echo $value['address'];?></td>
+						
 						<td><?php echo $value['gender'];?></td>
-						<td><?php echo $value['date_joined']; ?></td>
+						
 						<td><a href="">Edit</a>| <a href="">Delete</a></td>
 					</tr>
 					<?php
