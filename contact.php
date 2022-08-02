@@ -35,7 +35,7 @@
 			</div>
 		</div>
 		<div class="row mt-5 mt-5">
-			<div class="col-md-3" style="margin-left: 8%;">
+			<div class="col-lg-3 col-md-12" style="margin-left: 8%;">
 				<h3>Customer Support</h3>
 				<p class="contact">Have a question? Need some<br> help? Get in touch with us.</p>
 
@@ -45,7 +45,7 @@
 				Mon – Fri: 9:00 a.m. to 8:00 p.m.<br>
 				Sat & Sun: 10:00 a.m. to 6:00 p.m</span>
 			</div>
-			<div class="col-md-5">
+			<div class="col-lg-5 col-md-12">
 				<form class="form-control form" method="post" action="">
 					    <?php 
       if (!empty($errors)) {

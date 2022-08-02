@@ -19,12 +19,9 @@
             function custome($firstname, $lastname, $email, $password, $phone, $gender){
                 //prepare statement
                 $pwd = password_hash($password, PASSWORD_DEFAULT);
-
                 $stmt = $this->dbconn->prepare("INSERT INTO customer(firstname, lastname, email, password, phone, gender)VALUES(?,?,?,?,?,?)");
-                $stmt->bind_param('ssssss',$firstname,$lastname, $email, $pwd, $phone, $gender);
-
+                $stmt->bind_param('ssssss',$firstname,$lastname, $email,  $phone, $gender, $pwd);
                 //execute
-
                 $stmt->execute();
                 if($stmt->affected_rows ==1){
                     return true;
@@ -34,8 +31,19 @@
                 }
             }
         //end insert
-           
-
+                //begin insert book order
+            function order($fullname,  $address, $city, $devicemodel, $fault){
+                //prepare statement
+                $stmt = $this->dbconn->prepare("INSERT INTO order_details(fullname, address, city, devicemodel, fault)VALUES(?,?,?,?,?)");
+                $stmt->bind_param('sssss', $fullname, $address, $city, $devicemodel, $fault);
+                $stmt->execute();
+                if($stmt->affected_rows ==1){
+                    return true;
+                }else{
+                    echo "oops! something went wrong try again later".$stmt->error;
+                }
+            }
+        //end insert end book order
         // begin admin login
                             function login($email, $password){
                $stmt = $this->dbconn->prepare('SELECT * FROM admin WHERE email=?');
@@ -53,17 +61,24 @@
 
             if(password_verify($password, $row['password'])){
 
-               // session_start();
-               // header("location:dashboard.php");
+               session_start();
+                      $_SESSION['lastname'] = $row['lastname'];
+                    $_SESSION['firstname'] = $row['firstname'];
+                    $_SESSION['letmein'] = "supercayleb";
+                    $_SESSION['myemail'] = $row['email'];
+                    $_SESSION['mycust_id'] = $row['customer_id'];
+                    return true;
                
-            }else{
-                 return false;
-    exit(); 
-            }
-            }
-
-
+            }else {
+                   // echo " doesn't match";
+                    return false;
                 }
+            }else {
+                //echo "email address doesn't exist";
+                return false;
+          
+            }
+            }
         // end admin login
 
         // begin  login
@@ -83,12 +98,12 @@
 
             if(password_verify($password, $row['password'])){
 
-               // session_start();
+                session_start();
                     $_SESSION['lastname'] = $row['lastname'];
                     $_SESSION['firstname'] = $row['firstname'];
                     $_SESSION['letmein'] = "cayleb";
                     $_SESSION['myemail'] = $row['email'];
-                    $_SESSION['id'] = $row['customer_id'];
+                    $_SESSION['mycust_id'] = $row['customer_id'];
 
                 return true;
                }else {

@@ -1,4 +1,7 @@
 <?php ob_start() ?>
+<?php 
+  include_once('include/custdashboardnav.php');
+?>
 
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
           <div
@@ -25,7 +28,7 @@
       if(empty($_POST['fullname']) || empty($_POST['address']) || empty($_POST['city']) || empty($_POST['devicemodel']) || empty($_POST['fault'])){
         $errors[] = "please fill all field";
       }else{
-        include_once "../shared/customer.php";
+        include_once "shared/customer.php";
         $obj = new Customer();
         $output = $obj->order($_POST['fullname'], $_POST['address'], $_POST['city'], $_POST['devicemodel'], $_POST['fault']);
           if ($output == false) {
@@ -34,6 +37,8 @@
     $errors[] = "<div class='alert alert-success'>your order was successfull.</div>";
 
    }
+
+
       }
     }
   }
@@ -52,7 +57,7 @@
   <?php  
                
       if (!empty($errors)) {
-        echo "<ul class='alert alert-danger'>";
+        echo "<ul class='alert alert-dark'>";
         foreach ($errors as $key => $value) {
           echo "<li>$value</li>";
         }

@@ -700,5 +700,18 @@ if (!isset($errors) && is_array($errors)) {
 		echo "</ul>";
 		}
 
+	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+		include_once "../shared/dashuser.php";
+	$obj = new Dashuser();
+
+	$output = $obj->orde($_POST['fullname'], $_POST['email'], $_POST['phone'], $_POST['address'], $_POST['city'], $_POST['message1'], $_POST['message2'],);
+
+	if ($output == false) {
+		
+		$errors = "<div class='alert alert-danger'>please try again later thanks.</div>";
+	}else{
+		echo "Thanks for contacting us, we will get back to you. ";
+	}
+}
 
 

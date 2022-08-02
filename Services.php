@@ -16,11 +16,11 @@
 			</div>
 		</div>
 		<div class="row mt-5 mb-5">
-			<div class="col-md-7" >
+			<div class="col-lg-7 col-md-12" >
 
 				<img src="images/index4.jpg" width="80%">
 			</div>
-			<div class="col-md-5">
+			<div class="col-lg-5 col-md-12">
 				<div class="row">
 				<div class="col-md-12 mb-5"><h2 id="wecan">We Can <span style="color:gold">Repair</span> It!</h2></div>
 				<div class="col-md-12">

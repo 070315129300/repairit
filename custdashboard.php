@@ -1,6 +1,6 @@
 
 <?php 
-  include_once('include/dashboardnav.php');
+  include_once('include/custdashboardnav.php');
 ?>
 
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
@@ -25,7 +25,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div id="ajaxload">
+            <div id="cajaxload">
               
     <link type='text/css' rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
   <div class="container" style='min-height:700px'>
@@ -41,7 +41,7 @@
                 <div class="mr-5">Book a repair</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="">
-                <span class="float-left" style="color:gold;">Track a repair</span>
+                <span class="float-left" style="color:gold;"> View Details</span>
                 <span class="float-right">
                   <i class="fa fa-angle-right"></i>
                 </span>
@@ -54,7 +54,7 @@
                 <div>
                   <i class="fa fa-list"></i>
                 </div>
-                <div class="mr-5">Payment</div>
+                <div class="mr-5">Bill</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="">
                 <span class="float-left" style="color:gold;">View Details</span>
@@ -70,7 +70,7 @@
                 <div>
                   <i class="fa fa-comment"></i>
                 </div>
-                <div class="mr-5">12 Message</div>
+                <div class="mr-5">Track a repair</div>
               </div>
               <a class="card-footer text-white clearfix small z-1" href="">
                 <span class="float-left" style="color:gold;">View Details</span>
@@ -98,76 +98,10 @@
           </div>
         </div>
 
-        <div class="col-xl-4 col-sm-6 mb-3 my-5" style="height:200px;">
-            <div class="card text-white bg-danger o-hidden h-100">
-              <div class="card-body">
-                <div>
-                  <i class="fa  fa-ban"></i>
-                </div>
-                <div class="mr-5">13 pending issues!</div>
-              </div>
-              <a class="card-footer text-white clearfix small z-1" href="">
-                <span class="float-left" style="color:gold;">View Details</span>
-                <span class="float-right">
-                  <i class="fa fa-angle-right"></i>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
+        
   </div>
 
 
-         <script type="text/javascript" src="jqy/jquery.js"></script>
-         <script type="text/javascript">
-           $(document).ready(function(){
-            $('#book').click(function(){
-              $('#ajaxload').load('admin/order.php');
-            })
-            $('#track').click(function(){
-              $('#ajaxload').load('admin/trackarepair.php')
-            })
-            $('#staff').click(function(){
-              $('#ajaxload').load('admin/staff.php')
-            })
-            $('#contactus').click(function(){
-              $('#ajaxload').load('admin/contacts.php')
-            })
-            $('#bill').click(function(){
-              $('#ajaxload').load('admin/bill.php')
-            })
-            $('#payment').click(function(){
-              $('#ajaxload').load('admin/payment.php')
-            })
-            $('#orderd').click(function(){
-              $('#ajaxload').load('admin/order_details.php')
-            })
-            $('#pickup').click(function(){
-              $('#ajaxload').load('admin/logistics_pickup.php')
-            })
-            $('#delivery').click(function(){
-              $('#ajaxload').load('admin/logistics_delivery.php')
-            })
-            $('#device').click(function(){
-              $('#ajaxload').load('admin/device.php')
-            })
-            $('#customer').click(function(){
-              $('#ajaxload').load('admin/customer.php')
-            })
-            $('#logistics').click(function(){
-              $('#ajaxload').load('admin/logistics_company.php')
-            })
-             $('#dash').click(function(){
-              $('#ajaxload').load('admin/categories.php')
-            })
-           });
-
-
-         </script>
-       <?php 
-       include_once('include/dashboardjs.php')
-       ?>
  
 
 

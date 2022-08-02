@@ -26,17 +26,23 @@
             }
 			return $data;
 		}
-		public function payments($userid, $productid, $amount, $reference){
-			$stmt = $this->dbconn->prepare("INSERT INTO	payment(user_id, productid, amount, reference)VALUES(?,?,?,?");
+	      public function insertDetails($userid, $productid, $amount, $reference){
+            // prepare statement
+            $statement = $this->dbconn->prepare("INSERT INTO pay(user_id, product_id, amount, reference) VALUES(?,?,?,?)");
 
-				$stmt->bind_param('iids',$user_id, $productid, $amount, $reference);
-				$stmt->execute();
-			if ($statement->affected_rows == 1) {
+            // bind parameters
+            $statement->bind_param("iids",$userid, $productid, $amount, $reference);
+
+            // execute
+            $statement->execute();
+
+            // check if there is records
+            if ($statement->affected_rows == 1) {
                 return true;
             }else{
                 return false;
-            }	
-		}
+            }
+        }
 		//end insert payment
 	
 	// begin initialize paystack transaction
@@ -64,7 +70,7 @@
             curl_setopt($ch, CURLOPT_URL, $url);
             curl_setopt($ch, CURLOPT_POST, true); // Post Method use in sending the data
             curl_setopt($ch, CURLOPT_POSTFIELDS, $strfields); // data sent
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // return response as string
+     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // return response as string
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // do not verify SSL certificate
             curl_setopt($ch, CURLOPT_HTTPHEADER, array(
                 "Authorization: Bearer $key",

@@ -61,7 +61,7 @@ font-family: 'Poppins', sans-serif;
 	background-size:cover;	
 }
 .cont{
-	background-image:url('images/con1.png');
+	background-image:url('images/con8.webp');
 	height:500px;
 	width:100%;
 	background-position:center;

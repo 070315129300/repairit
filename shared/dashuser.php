@@ -2,20 +2,22 @@
 	include_once "constants.php";
 
 	class Dashuser{
+        public $fullname;
 		public $dbconn;
 
 		function __construct(){
 			$this->dbconn = new Mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASENAME);
 			if($this->dbconn->connect_error){
 				die('connection Failed:'.$this->dbconn->connect_error);
-
-			}
+			}else{
+                 echo "connection suceessful";
+            }
 		}
 		//begin insert book order
-			function orde($fullname,$email, $phone, $address, $city, $devicemodel, $fault){
+			function order($fullname,  $address, $city, $devicemodel, $fault){
 				//prepare statement
-				$stmt = $this->dbconn->prepare("INSERT INTO orders(fullname, email, phone, address, city, devicemodel, fault)VALUES(?,?,?,?,?,?,?)");
-				$stmt->bind_param('sssssss', $fullname, $email, $phone, $address, $city, $devicemodel, $fault);
+				$stmt = $this->dbconn->prepare("INSERT INTO order_details(fullname, address, city, devicemodel, fault)VALUES(?,?,?,?,?,)");
+				$stmt->bind_param('sssss', $fullname, $address, $city, $devicemodel, $fault);
 				$stmt->execute();
 				if($stmt->affected_rows ==1){
                     return true;

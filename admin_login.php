@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include_once("include/menus_navbar.php");
   //check if the user click on login button
 
@@ -24,9 +25,10 @@ $custobj =new Customer();
     <!-- Page Heading/Breadcrumbs -->
     
      <?php  
-          if(isset($output)){
-            var_dump ($output);
-          }
+              if(isset($error)){
+        echo ($error);
+    }
+
           ?>
 
           <?php 

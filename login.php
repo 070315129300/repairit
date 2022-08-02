@@ -12,7 +12,7 @@ $custobj =new Customer();
   }else{
 
    
-    header("Location:dashboard.php");
+    header("Location:custdashboard.php");
     exit();
     
   }

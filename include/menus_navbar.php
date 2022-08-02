@@ -42,8 +42,8 @@
 		<nav class="navbar navbar-expand-lg "style="background: black;">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php"><span style="color:gold">REPAIR</span><span style="color:white">IT</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color:gold;">
+      <span class="navbar-toggler-icon">click</span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 10%;">
       <ul class="navbar-nav  mb-1 mb-md-0" >
