@@ -27,7 +27,7 @@
 		<div class="col-md-12">
 			<h2>initail payment</h2>
 			<?php 	
-				include_once "../shared/paymentmethod.php";
+				include_once "shared/paymentmethod.php";
 				$obj = new Payment();
 
 				$bill = $obj->getbill();
@@ -40,7 +40,7 @@
                     <p>&#8358
                         <?php echo number_format($value['amount'],2); ?>
                         
-                        <form method="post" action="admin/payment.php">
+                        <form method="post" action="custpayment.php">
                             <input type="hidden" name="myamount" value="<?php echo $value['amount']; ?>" />
                          
                             <input type="hidden" name="mybilid" value="<?php echo $value['bill_id']; ?>" />

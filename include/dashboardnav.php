@@ -169,12 +169,12 @@
                   Order details
                 </a>
               </li>
-              <li class="nav-item">
+             <!--  <li class="nav-item">
                 <a class="nav-link" id="bill" class="side">
                   <span data-feather="layers" class="align-text-bottom"></span>
                   First bill
                 </a>
-              </li>
+              </li> -->
                <li class="nav-item">
                 <a class="nav-link" id="payment" class="side">
                   <span data-feather="layers" class="align-text-bottom"></span>
@@ -187,7 +187,7 @@
                   Logistics company
                 </a>
               </li>
-              <li class="nav-item">
+      <!--         <li class="nav-item">
                 <a class="nav-link" id="pickup" class="side">
                   <span data-feather="layers" class="align-text-bottom"></span>
                   Logistics pickup
@@ -198,7 +198,7 @@
                   <span data-feather="layers" class="align-text-bottom">Logistics delivery</span>
                   
                 </a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" id="staff" class="side">
                   <span data-feather="layers" class="align-text-bottom"> Staff</span>

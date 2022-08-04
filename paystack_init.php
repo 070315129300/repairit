@@ -1,4 +1,4 @@
-<?php 
+<?php    //include_once "include/custdashboardnav.php"; 
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['btnpay'])) {
         
         //var_dump($_POST);
@@ -17,9 +17,9 @@
             # redirect to paystack payment gateway
             header("Location: $redirect_url");
         }else{
-            echo "<pre>";
-            print_r($output);
-            echo "</pre>";
+             echo "<pre>";
+             print_r($output);
+             echo "</pre>";
         }
     }
 ?>

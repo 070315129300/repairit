@@ -121,40 +121,40 @@
         <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
           <div class="position-sticky pt-3">
             <ul class="nav flex-column">
-              <li class="nav-item" >
-                <a class="nav-link active" id="dash" class="side">
+              <li class="nav-item mt-3 mb-2" >
+                <a class="nav-link active" id="dash" class="side" href="custdashboard.php">
                   <span data-feather="home" class="align-text-bottom"></span>
                   
                   Dashboard
                 </a>
               </li>
         
-              <li class="nav-item" id="cbook" >
-                <a class="nav-link" class="side" href="bookarepair.php">
+              <li class="nav-item  mt-2 mb-2" id="cbook" >
+                <a class="nav-link" class="side " href="bookarepair.php">
                   <span data-feather="file" class="align-text-bottom"></span>
                   Book a repair
                 </a>
 
               </li>
-              <li class="nav-item" id="ctrack" >
+              <li class="nav-item  mt-2 mb-2" id="ctrack" >
                 <a class="nav-link" class="side" href="custtrackarepair.php">
                   <span data-feather="file" class="align-text-bottom"></span>
                   Track a repair
                 </a>
 
         
-              <li class="nav-item">
+              <li class="nav-item  mt-2 mb-2">
                 <a class="nav-link" id="cbill" class="side" href="custbill.php">
                   <span data-feather="layers" class="align-text-bottom"></span>
                   First bill
                 </a>
               </li>
-               <li class="nav-item">
+               <!-- <li class="nav-item  mt-2 mb-2">
                 <a class="nav-link" id="cpayment" class="side" href="custpayment.php">
                   <span data-feather="layers" class="align-text-bottom"></span>
                   Payment
                 </a>
-              </li>
+              </li> -->
       
             </ul>
 

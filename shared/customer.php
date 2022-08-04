@@ -44,6 +44,54 @@
                 }
             }
         //end insert end book order
+            //begin insert log
+                function log($log_name, $log_email, $log_phone){
+                //prepare statement
+                $stmt = $this->dbconn->prepare("INSERT INTO logistics_company(log_name, log_email, log_phone )VALUES(?,?,?)");
+                $stmt->bind_param('sss', $log_name, $log_email, $log_phone);
+                $stmt->execute();
+                if($stmt->affected_rows ==1){
+                    return true;
+                }else{
+                    echo "oops! something went wrong try again later".$stmt->error;
+                }
+            }
+
+            //end insert log
+            //begin get log
+            public function getlog($log_id){
+            // prepare statement
+            $statement = $this->dbconn->prepare("SELECT * FROM logistics_company WHERE log_id=?");
+
+            // bind the parameter
+            $statement->bind_param("i", $log_id);
+
+            // execute
+            $statement->execute();
+
+            // get result
+            $result = $statement->get_result();
+            
+            return $result->fetch_assoc();
+        }
+        # end getClub
+            // end get log
+                # begin updateClub method
+        public function updatelog($log_name, $log_email, $log_phone){
+            // prepare the statement
+            $statement = $this->conn->prepare("UPDATE logistics_company SET log_name=?, log_email=?, log_phone=?");
+            // bind parameters
+            $statement->bind_param("sss", $log_name, $log_email, $log_phone);
+
+            // execute
+            $statement->execute();
+
+            // check if record was updated
+            if ($statement->affected_rows == 1){
+                return $statement->affected_rows;
+            }
+        }
+        # end updateClub method
         // begin admin login
                             function login($email, $password){
                $stmt = $this->dbconn->prepare('SELECT * FROM admin WHERE email=?');

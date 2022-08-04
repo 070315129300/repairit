@@ -50,7 +50,8 @@
             $url = "https://api.paystack.co/transaction/initialize";
 
             $callbackurl = "http://localhost/repairIt/paystack_callback.php";
-            $key = "sk_test_1b8af075669b4d6d280b16bbc0a84f3741d2378";
+            $key = 'sk_test_9dfacbeaefe4e9254d1f7ae6ab149bec0270857e';
+            // "sk_test_1b8af075669b4d6d280b16bbc0a84f3741d2378"; 
 
 
             $fields = array(
@@ -98,7 +99,8 @@
         public function verifyPaystackTransaction($ref){
 
             $url = "https://api.paystack.co/transaction/verify/$ref";
-            $key = "sk_test_1b8af075669b4d6d280b16bbc0a84f3741d2378";
+            $key = "sk_test_9dfacbeaefe4e9254d1f7ae6ab149bec0270857e"; 
+            // "sk_test_1b8af075669b4d6d280b16bbc0a84f3741d2378";
 
             // Step 1: open connection
             $ch = curl_init();
@@ -134,7 +136,7 @@
             // Check if Paystack Amount is the same as Portal Amount (ASSIGNMENT)
 
             // update statement
-            $statement = $this->conn->prepare("UPDATE payment SET paymentstatus=? WHERE reference=?");
+            $statement = $this->dbconn->prepare("UPDATE pay SET paymentstatus=? WHERE reference=?");
 
             // bind parameters
             $paymentstatus = "completed";

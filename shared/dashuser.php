@@ -13,19 +13,6 @@
                  echo "connection suceessful";
             }
 		}
-		//begin insert book order
-			function order($fullname,  $address, $city, $devicemodel, $fault){
-				//prepare statement
-				$stmt = $this->dbconn->prepare("INSERT INTO order_details(fullname, address, city, devicemodel, fault)VALUES(?,?,?,?,?,)");
-				$stmt->bind_param('sssss', $fullname, $address, $city, $devicemodel, $fault);
-				$stmt->execute();
-				if($stmt->affected_rows ==1){
-                    return true;
-                }else{
-                    echo "oops! something went wrong try again later".$stmt->error;
-                }
-			}
-		//end insert end book order
 			
 		//fetch staff
 			 public function staff(){
@@ -116,7 +103,7 @@
 		//book a repair
         	 public function ordermade(){
             // prepare statement
-            $stmt = $this->dbconn->prepare("SELECT * FROM orders");
+            $stmt = $this->dbconn->prepare("SELECT * FROM order_details");
 
             // execute
             $stmt->execute();
@@ -133,9 +120,9 @@
             return $re;
         }
 		//end a repair
-         public function orderdetails(){
+         public function paymentmade(){
             // prepare statement
-            $stmt = $this->dbconn->prepare("SELECT * FROM logistics_company");
+            $stmt = $this->dbconn->prepare("SELECT * FROM pay");
 
             // execute
             $stmt->execute();
