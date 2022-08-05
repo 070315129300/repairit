@@ -1,6 +1,6 @@
 <?php ob_start() ?>
 <?php 
-  include_once('include/dashboardnav.php');
+  include_once('include/dashboardnavsp.php');
 ?>
 
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">

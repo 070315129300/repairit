@@ -10,7 +10,7 @@
  			}else{
  				include_once "shared/customer.php";
  				$obj = new Customer();
- 				$output = $obj->custome($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['phone'], $_POST['gender'], $_POST['password']);
+ 				$output = $obj->custome($_POST['firstname'], $_POST['lastname'], $_POST['email'], $_POST['password'], $_POST['gender'], $_POST['phone']);
  					if ($output == false) {
 		$errors[] = "<div class='alert alert-danger'>please try again later thanks.</div>";
 	}else{
@@ -63,7 +63,7 @@
 		<label>Gender</label>
 		<input type="radio" name="gender" value="male"><span>Male</span>
 		<input type="radio" name="gender" value="female"><span>Female</span><br>
-		<button class="btn btn-outline-warning mb-5 mt-5" name="btnsignup">Sign up</button><br>
+		<button class="btn btn-outline-warning mb-3 mt-1" name="btnsignup">Sign up</button><br>
 		<small>if you have an account please <a href="login.php">login</a><small>
 	</form>	
 	

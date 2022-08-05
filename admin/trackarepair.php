@@ -25,7 +25,7 @@
           ?>
           <tr>
             <td><?php echo $value['order_details_id']; ?></td>
-            <td><?php echo $value['customer_id']; ?></td>
+            <td><?php echo $value['customer_email']; ?></td>
             <td><?php echo $value['fullname']; ?></td>
             <td><?php echo $value['address']; ?></td>
             <td><?php echo $value['city']; ?></td>

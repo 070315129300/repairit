@@ -10,7 +10,7 @@
 			if($this->dbconn->connect_error){
 				die('connection Failed:'.$this->dbconn->connect_error);
 			}else{
-                 echo "connection suceessful";
+                // echo "connection suceessful";
             }
 		}
 			

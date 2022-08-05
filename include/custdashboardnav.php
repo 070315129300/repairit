@@ -72,32 +72,13 @@
 
   <body>
 
+
     <?php 
         // start session
         session_start();
         include_once('dashboardcss.php');
 
-        if (!isset($_SESSION['letmein']) && $_SESSION['letmein']!='cayleb') {
-          // redirect to login
-          //$msg = "<script>alert('You need to login to access this page!')</script>";
-          $msg = "You need to login to access this page!";
-          
-          header("Location: login.php?m=$msg");
-          exit();
-        }
-
-        // echo "<pre>";
-       //  print_r($_SESSION);
-       //  echo "</pre>";
-
-        // sanitize function
-        function sanitizeInput($data){
-          $data = trim($data);
-          $data = htmlspecialchars($data);
-          $data = addslashes($data);
-
-          return $data;
-        }
+      
     ?>
     
 
@@ -136,11 +117,12 @@
                 </a>
 
               </li>
-              <li class="nav-item  mt-2 mb-2" id="ctrack" >
+        <!--       <li class="nav-item  mt-2 mb-2" id="ctrack" >
                 <a class="nav-link" class="side" href="custtrackarepair.php">
                   <span data-feather="file" class="align-text-bottom"></span>
                   Track a repair
                 </a>
+              </li> -->
 
         
               <li class="nav-item  mt-2 mb-2">

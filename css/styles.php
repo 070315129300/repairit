@@ -179,5 +179,9 @@ margin-top: 50px;
 .fom{
 	padding: 10%;
 }
+.over{
+	font-size: 30px;
+	color: gold;
+}
 
 </style>

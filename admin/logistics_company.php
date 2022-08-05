@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-md-8">
 			<h2>Logistics Company</h2>
-			<button class="btn btn-warning mb-3 mt-2"><a href="add_log.php">Add log</a></button>
+			<button class="btn btn-warning"><a href="add_log.php">Add log</a></button>
 			<table class="table table-bordered table-striped table-hover">
 				<thead>
 					
@@ -30,7 +30,7 @@
 						<td><?php echo $value['log_phone']; ?></td>
 						
 						 <td><?php echo $value['date_joined']; ?></td>
-						 <td><a href="edit_log.php">Edit</a></td>
+						<!--  <td><a href="">Edit</a>| <a href="">Delete</a></td> -->
 					</tr>
 					<?php
 						}

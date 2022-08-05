@@ -161,6 +161,9 @@
              $('#dash').click(function(){
               $('#ajaxload').load('admin/categories.php')
             })
+               $('#addlog').click(function(){
+              $('#ajaxload').load('admin/add_log.php')
+            })
            });
 
 

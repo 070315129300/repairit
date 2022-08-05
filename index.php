@@ -16,7 +16,7 @@
 						<div id="content">
 							<h3 class="navslide">Get it working again</h3>
 							<p class="nav_p">you need a device fixed?</p>
-							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:gray	; text-decoration-line: none;">book a repair</a></button>
+							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:#23CE6B; text-decoration-line: none;">book a repair</a></button>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -25,7 +25,7 @@
 					<div id="content">
 							<h3 class="navslide">Get it working again</h3>
 							<p class="nav_p">you need a device fixed?</p>
-							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:gray	; text-decoration-line: none;">book a repair</a></button>
+							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:#23CE6B; text-decoration-line: none;">book a repair</a></button>
 					</div>
 				</div>
 				
@@ -35,7 +35,7 @@
 					<div id="content">
 							<h3 class="navslide">Get it working again</h3>
 							<p class="nav_p">you need a device fixed?</p>
-							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:gray	; text-decoration-line: none;">book a repair</a> </button>
+							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:#23CE6B; text-decoration-line: none;">book a repair</a> </button>
 					</div>
 				
 				</div>
@@ -206,8 +206,8 @@
 				<img src="images/index6.webp" class="img-fluid">
 			</div>
 		</div>
-		<div class="row" style=" background-color: aquamarine; height:500px">
-			<div class="col-md-4" >
+		<div class="row" style=" background-color: white; height:200px; text-align: center;">
+			<!-- <div class="col-md-4" >
 
 				<div class="counters"><p>Over <span class="counter" data-target='2000'>0</span> completed repairs & Still counting.</p></div>
 			</div>
@@ -218,7 +218,23 @@
 
 					<div class="col-md-4">
 						<p>Over <span class="counter" data-target='8000'>0 </span> happy customer.</p>
+					</div> -->
+					<div class="col-md-1"></div>
+						<div class="col-md-4 mt-5">
+					<div class="shadow over">
+						<p>Over <span class="counter" data-target='2000'>5000</span> completed repairs & Still counting.</p>
 					</div>
+				</div>
+					<div class="col-md-3 mt-5">
+					<div class="shadow over">
+						<p>Over <span class="counter" data-target='8000'>4000</span> happy customer.</p>
+					</div>
+				</div>
+					<div class="col-md-3 mt-5">
+					<div class="shadow over">
+					<p>Over <span class="counter" data-target='8000'>15 </span> happy customer.</p>
+					</div>
+				</div>
 	</div>
 </div>
 

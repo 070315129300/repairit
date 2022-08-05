@@ -2,6 +2,8 @@
 	<div class="row">
 		<div class="col-md-8">
 			<h2>Staffs</h2>
+
+			<button class="btn btn-warning" > <a href="add_staff.php">Add staff</a></button>
 			<table class="table table-bordered table-striped table-hover"
 			width="100%"; line-height="40px;" align="center">
 				<thead>
@@ -34,7 +36,7 @@
 						<td><?php echo $value['staff_qualification'];?></td>
 						 <td><?php echo $value['date_joined']; ?></td>
 
-						 <td><a href="">Edit</a>| <a href="">Delete</a></td>
+						 <!-- <td><a href="">Edit</a>| <a href="">Delete</a></td> -->
 					</tr>
 					<?php
 						}

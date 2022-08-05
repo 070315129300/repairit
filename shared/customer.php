@@ -19,7 +19,7 @@
             function custome($firstname, $lastname, $email, $password, $phone, $gender){
                 //prepare statement
                 $pwd = password_hash($password, PASSWORD_DEFAULT);
-                $stmt = $this->dbconn->prepare("INSERT INTO customer(firstname, lastname, email, password, phone, gender)VALUES(?,?,?,?,?,?)");
+                $stmt = $this->dbconn->prepare("INSERT INTO customer(firstname, lastname, email, gender, phone, password)VALUES(?,?,?,?,?,?)");
                 $stmt->bind_param('ssssss',$firstname,$lastname, $email,  $phone, $gender, $pwd);
                 //execute
                 $stmt->execute();
@@ -32,10 +32,10 @@
             }
         //end insert
                 //begin insert book order
-            function order($fullname,  $address, $city, $devicemodel, $fault){
+            function order($fullname, $customer_email, $address, $city, $devicemodel, $fault){
                 //prepare statement
-                $stmt = $this->dbconn->prepare("INSERT INTO order_details(fullname, address, city, devicemodel, fault)VALUES(?,?,?,?,?)");
-                $stmt->bind_param('sssss', $fullname, $address, $city, $devicemodel, $fault);
+                $stmt = $this->dbconn->prepare("INSERT INTO order_details(fullname, customer_email, address, city, devicemodel, fault)VALUES(?,?,?,?,?)");
+                $stmt->bind_param('sssss', $fullname, $customer_email, $address, $city, $devicemodel, $fault);
                 $stmt->execute();
                 if($stmt->affected_rows ==1){
                     return true;
@@ -44,6 +44,21 @@
                 }
             }
         //end insert end book order
+             
+            //begin insert staff
+                function addstaff($staff_name, $staff_email, $staff_address, $staff_qualification){
+                //prepare statement
+                $stmt = $this->dbconn->prepare("INSERT INTO staff(staff_name,staff_email, staff_address, staff_qualification )VALUES(?,?,?,?)");
+                $stmt->bind_param('ssss', $staff_name, $staff_email, $staff_address, $staff_qualification);
+                $stmt->execute();
+                if($stmt->affected_rows ==1){
+                    return true;
+                }else{
+                    echo "oops! something went wrong try again later".$stmt->error;
+                }
+            }
+
+            //end insert staff
             //begin insert log
                 function log($log_name, $log_email, $log_phone){
                 //prepare statement

@@ -109,4 +109,10 @@ margin-left: 10px;
 .shadow{
 	box-shadow: 6px 12px 9px dimgray;;
 }
+.form, input{
+	background: transparent;
+	 border:none; 
+	 outline:none;
+	  border-bottom: 1px solid gray;
+}
 

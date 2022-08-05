@@ -24,9 +24,9 @@
 		<div class="col-md-12">
 				<?php 
 				if ($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['btnpay'])) {
-				 	 echo "<pre>";
-				 	 print_r($_SESSION);
-            		 echo "</pre>";
+				 	 // echo "<pre>";
+				 	 // print_r($_SESSION);
+       //      		 echo "</pre>";
            			 include_once "shared/paymentmethod.php";
 
            			 $obj = new Payment();
@@ -39,7 +39,7 @@
                 <p>
                   <?php  
                 if (isset($_SESSION['firstname'])) {
-                   echo $_SESSION['firstname']." ".$_SESSION['lastname'];
+                   echo '<h2>'. $_SESSION['firstname'].' '.$_SESSION['lastname'].'</h2>';
                 }
             ?>
                     <?php echo $_POST['myname']; ?>

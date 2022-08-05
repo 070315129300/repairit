@@ -103,7 +103,7 @@
     
 
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#" style="color: gold;">REPAIR_IT</a>
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="dashboard.php" style="color: gold;">REPAIR_IT</a>
       <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
         data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -117,7 +117,7 @@
       </div>
     </header>
 
-       <div class="container-fluid">
+    <div class="container-fluid">
       <div class="row">
         <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
           <div class="position-sticky pt-3">
@@ -125,86 +125,7 @@
               <li class="nav-item" >
                 <a class="nav-link active" id="dash" class="side">
                   <span data-feather="home" class="align-text-bottom"></span>
-                  
-                  Dashboard
                 </a>
               </li>
-        <!--       <li class="nav-item" id="book" >
-                <a class="nav-link" class="side" >
-                  <span data-feather="file" class="align-text-bottom"></span>
-                  Book a repair
-                </a>
 
-              </li>
- -->              <li class="nav-item" id="track" >
-                <a class="nav-link" class="side">
-                  <span data-feather="file" class="align-text-bottom"></span>
-                   All orders
-                </a>
-
-              </li>
-         <!--      <li class="nav-item">
-                <a class="nav-link" id="device" class="side">
-                  <span data-feather="shopping-cart" class="align-text-bottom"></span>
-                  Device
-                </a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" id="contactus" class="side">
-                  <span data-feather="shopping-cart" class="align-text-bottom"></span>
-                  Message
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="customer" class="side">
-                  <span data-feather="users" class="align-text-bottom"></span>
-                  Customer
-                </a>
-              </li>
-             <!--  <li class="nav-item">
-                <a class="nav-link" id="orderd" class="side">
-                  <span data-feather="bar-chart-2" class="align-text-bottom"></span>
-                  Order details
-                </a>
-              </li> -->
-             <!--  <li class="nav-item">
-                <a class="nav-link" id="bill" class="side">
-                  <span data-feather="layers" class="align-text-bottom"></span>
-                  First bill
-                </a>
-              </li> -->
-               <li class="nav-item">
-                <a class="nav-link" id="payment" class="side">
-                  <span data-feather="layers" class="align-text-bottom"></span>
-                  Payment
-                </a>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link" id="logistics" class="side">
-                  <span data-feather="layers" class="align-text-bottom"></span>
-                  Logistics company
-                </a>
-              </li>
-     
-            </ul>
-      <!--         <li class="nav-item">
-                <a class="nav-link" id="pickup" class="side">
-                  <span data-feather="layers" class="align-text-bottom"></span>
-                  Logistics pickup
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="delivery" class="side">
-                  <span data-feather="layers" class="align-text-bottom">Logistics delivery</span>
-                  
-                </a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" id="staff" class="side">
-                  <span data-feather="layers" class="align-text-bottom"> Staff</span>
-                 
-                </a>
-              </li>
-         
-          </div>
         </nav>

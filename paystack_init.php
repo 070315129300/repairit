@@ -1,4 +1,4 @@
-<?php    //include_once "include/custdashboardnav.php"; 
+<?php   // include_once "include/custdashboardnav.php"; 
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['btnpay'])) {
         
         //var_dump($_POST);

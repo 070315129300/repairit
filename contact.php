@@ -9,7 +9,7 @@
 		if(isset($_POST['btnsubmit'])){
                 //validate
                 if(empty($_POST['fullname']) || empty($_POST['email']) || empty($_POST['message'])){
-                $errors[] = "please fill all field";
+                $errors[] = "<div class='alert alert-danger'>please fill all field</div>"; 
 
                 }else{
 
@@ -19,9 +19,9 @@
 	$output = $obj->contactus($_POST['fullname'], $_POST['email'], $_POST['message']);
 
 	if ($output == false) {
-		$errors = "<div class='alert alert-danger'>please try again later thanks.</div>";
+		$errors[] = "<div class='alert alert-danger'>please try again later thanks.</div>";
 	}else{
-		echo "Thanks for contacting us, we will get back to you. ";
+		$errors[] = "<div class='alert alert-success'>Thanks for contacting us, we will get back to you.</div> ";
 
 	 }
 	}}
@@ -49,7 +49,7 @@
 				<form class="form-control form" method="post" action="">
 					    <?php 
       if (!empty($errors)) {
-        echo "<ul class='alert alert-danger'>";
+        echo "<ul>";
         foreach ($errors as $key => $value) {
           echo "<li>$value</li>";
         }

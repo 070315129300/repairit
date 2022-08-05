@@ -1,5 +1,5 @@
 <?php
-    include_once "custdashboardnav.php"; 
+    // include_once "include/custdashboardnav.php"; 
     var_dump($_REQUEST);
 
     if (isset($_REQUEST['reference'])) {
@@ -32,9 +32,9 @@
         }else{
             echo "Oops! Could not verify transaction.";
 
-            echo "<pre>";
-            print_r($output);
-            echo "</pre>";
+            // echo "<pre>";
+            // print_r($output);
+            // echo "</pre>";
         }
     }
 ?>
