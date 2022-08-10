@@ -29,7 +29,7 @@
  			<div class="col-lg-6 col-md-12 mt-5">
  				<img src="images/signup.png" class="mt-5 img-fluid">
  			</div>
- 			<div class="col-lg-6 col-md-7">
+ 			<div class="col-lg-6 col-md-7" style="padding: 50px;">
  				
 	<form method="POST" action="" class="form-control form">
 	<h4 id="conct">Sign Up</h4>

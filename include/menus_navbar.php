@@ -6,9 +6,9 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta Name="Description" content="">
-	<meta Name="keyword" content="">
-	<meta Name="Author" content="">
+	<meta Name="Description" content="RepairIt guides and disassembly information for phones from all manufacturers and service providers, including Apple iPhone and Samsung Galaxy. Get everything... Phone troubleshooting, repair, and service manuals.">
+	<meta Name="keyword" content="Phone Repair, Phone, iFixit, Mac, MacBook, iPod, iPhone, Repair, Parts, XBox, PlayStation, Game Boy, Nintendo DSi, tools, repair it, need a repair, bad phone, spoilt phone, ikeja, computer village.">
+	<meta Name="Author" content="Caleb, repairIt">
 	<title>Repair It</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	 <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js"></script> 
@@ -64,9 +64,7 @@
         <li class="nav-item ">
           <a class="nav-link hover" href="signup.php">Sign up</a>
         </li> 
-        <li class="nav-item ">
-            <a class="nav-link disabled hover">blog</a>
-          </li>
+        
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle hover" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">login</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown01"  style="background:black;">

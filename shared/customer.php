@@ -34,8 +34,8 @@
                 //begin insert book order
             function order($fullname, $customer_email, $address, $city, $devicemodel, $fault){
                 //prepare statement
-                $stmt = $this->dbconn->prepare("INSERT INTO order_details(fullname, customer_email, address, city, devicemodel, fault)VALUES(?,?,?,?,?)");
-                $stmt->bind_param('sssss', $fullname, $customer_email, $address, $city, $devicemodel, $fault);
+                $stmt = $this->dbconn->prepare("INSERT INTO order_details(fullname, customer_email, address, city, devicemodel, fault)VALUES(?,?,?,?,?,?)");
+                $stmt->bind_param('ssssss', $fullname, $customer_email, $address, $city, $devicemodel, $fault);
                 $stmt->execute();
                 if($stmt->affected_rows ==1){
                     return true;

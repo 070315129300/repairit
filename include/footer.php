@@ -3,7 +3,7 @@
 		<div class="col-sm-1 col-lg-2"></div>
 		<div class="col-sm-5 col-lg-2">
 		<div class="kfoot">
-		<h5 style="margin-top:20%">Repair It </h5>
+		<h5 style="margin-top:30%">Repair It </h5>
 		<p style="color:white">Repair It always got you covered</p>
 		</div></div>
 

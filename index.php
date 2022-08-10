@@ -16,7 +16,8 @@
 						<div id="content">
 							<h3 class="navslide">Get it working again</h3>
 							<p class="nav_p">you need a device fixed?</p>
-							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:#23CE6B; text-decoration-line: none;">book a repair</a></button>
+							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:blanchedalmond; text-decoration-line: none;
+							">book a repair</a></button>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -25,7 +26,7 @@
 					<div id="content">
 							<h3 class="navslide">Get it working again</h3>
 							<p class="nav_p">you need a device fixed?</p>
-							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:#23CE6B; text-decoration-line: none;">book a repair</a></button>
+							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:blanchedalmond; text-decoration-line: none;">book a repair</a></button>
 					</div>
 				</div>
 				
@@ -35,7 +36,7 @@
 					<div id="content">
 							<h3 class="navslide">Get it working again</h3>
 							<p class="nav_p">you need a device fixed?</p>
-							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:#23CE6B; text-decoration-line: none;">book a repair</a> </button>
+							<button class="btn	btn-outline-warning	"><a href="login.php" style="color:blanchedalmond; text-decoration-line: none;">book a repair</a> </button>
 					</div>
 				
 				</div>
@@ -88,23 +89,23 @@
 
 			<div class="row mt-5" style="background-color: #010101;">
 				<div class="col-md-6 col-sm-12">
-					<p id="index_break"> we can <span style="color:gold">REPAIT IT</span><br>
+					<p id="index_break"> we can <span style="color:gold">REPAIR IT</span><br>
 						almost has fast has you <br>can break it</p>
 					<p id="fast_repair">
 						We do fast phone repair. In most cases,<br> technicians will be able to repair your<br> device
 						in just minutes, we’ll normally<br>
 						get your phone in and out in 45 minutes or less.</p>
 					<button class="btn btn-outline-warning mb-5 mt-5" 
-					style="margin-left: 16%;">Book a repair</button>
+					style="margin-left: 10%;">Book a repair</button>
 				</div>
 				<div class="col-md-6 col-sm-12	" >
 					<img src="images/8.jpg" style="margin-top: 25%;">
 				</div>
 
 			</div>
-			<div class="row" style="background-color: #babab8;">
+			<div class="row" style="background-color: #EBECEE;">
 				<div class="col-md-6 col-sm-12">
-					<img src="images/contact2.jpg" alt="phone" width="70%" style="margin: 15% 15%;">
+					<img src="images/download2.avif" alt="phone" width="70%" style="margin: 10% 15%;">
 				</div>
 				<div class="col-md-6 col-sm-12 mt-5">
 					<h3 id="choose">While Choose Us <span style="color: gold;">?</span> </h3>
@@ -203,7 +204,7 @@
 			</div>
 
 			<div class="col-md-6 mt-5 ">
-				<img src="images/index6.webp" class="img-fluid">
+				<img src="images/download3.avif" class="img-fluid">
 			</div>
 		</div>
 		<div class="row" style=" background-color: white; height:200px; text-align: center;">

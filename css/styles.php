@@ -41,7 +41,7 @@ font-family: 'Roboto', sans-serif;
 	background-size:cover;	
 }
 #conct{
-	margin-left:20%;
+	margin-left:30%;
 	font-weight:bolder;
 	color:gold;
 
@@ -106,7 +106,7 @@ font-family: 'Roboto', sans-serif;
     font-size: 60px;
     margin-left: 100px;
     margin-top: 100px;
-   color:antiquewhite;
+   color:aliceblue;
 }
 #choose{
     font-size: 60px;
@@ -121,7 +121,7 @@ padding: 16px;
 margin-left: 10px;
 }
 #fast_repair{
-    margin-left: 140px;
+    margin-left: 100px;
     font-size: 20px;
     color:aliceblue;
     padding: 0px;
@@ -154,7 +154,7 @@ margin-left: 10px;
 	position: absolute;
 	top: 30%;
 	left: 30%;
-	color: #23CE6B;
+	color: darkgoldenrod;
 	text-align: center;
 
 }
@@ -172,8 +172,8 @@ margin-left: 10px;
 	font-size: 25px;
 }
 #broken{ 
-color: antiquewhite;
-margin-left: 140px;
+color: aliceblue;
+margin-left: 120px;
 margin-top: 50px;
 } 
 .fom{
